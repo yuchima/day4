@@ -1,0 +1,22 @@
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+    function createPara (){
+        let para = document.createElement('em');
+        para.textContent = "you clicked the button";
+        document.body.appendChild(para);
+    }
+
+const buttons = document.querySelectorAll('button');
+
+for (let i=0; i<buttons.length; i++){
+    buttons[i].addEventListener('click', createPara)
+}
+
+});
+</script>
+
+<body>
+
+    <button id="111">a button</button>
+</body>
